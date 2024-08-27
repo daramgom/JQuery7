@@ -10,7 +10,12 @@
 <h1>test1.jsp</h1>
 
 <!-- jquery 반드시 라이브러리 추가 -->
-<script src="../js/jquery-3.7.1.min.js"></script>
+<!-- <script src="../js/jquery-3.7.1.min.js"></script> -->
+<!-- jquery 반드시 라이브러리 추가 (CDN : Content Delivery Network) -->
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<!-- otherCDN이 속도가 더 빠름 
+	주의 : 여러개 추가 가능, 하지만 버전 충돌을 주의 -->
 <script type="text/javascript">
 	$(document).ready(function(){
 		

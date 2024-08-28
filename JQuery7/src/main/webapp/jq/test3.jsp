@@ -42,7 +42,7 @@
 		// 글자색(초,주,빨) + 배경색(검)
 		$("h2").css({
 			color : function(idx,a,b){
-				// alert(idx+"/"+a+"/"+b);
+				// alert(idx+"/"+a+"/"+b); idx 매개변수자리 --> 인덱스, a 매개변수자리 --> 값으로 정해져있음
 				return colorArr[idx];
 			},
 			background : 'black'
@@ -53,6 +53,28 @@
 		alert(imgValue);
 		
 		$('img').attr('src','ico_kakao.png');
+		
+		// img태그에 'border' 속성의 값을 5 설정
+		$('img').attr('border','5');
+		
+		// 이미지마다 다르게 설정 (5,10,15)
+		$('img').attr('border',function(idx,attr){
+			// alert(idx+"/"+attr); 인덱스, 설정된 속성값
+			return (idx+1)*5;
+		});
+		
+		// width, height, border 설정을 한번에 처리
+		// 가로길이를 모두 다르게 설정
+		$('img').attr({
+			'width' : function(idx){
+				return (idx+1)*100;
+			},
+			'height' : 200,
+			"border" : '10'
+		});
+		
+		
+		
 		
 		
 	});// jquery 끝

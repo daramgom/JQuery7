@@ -29,7 +29,7 @@
 		
 		alert(" jquery 실행(2) ");
 		
-	}); // jquery 기본적 구조 다른 형태 *일반적으로 이것을 사용함
+	}); // jquery 기본적 구조 다른 형태 *일반적으로 이것을 사용함*
 	
 	jQuery(document).ready(function(){
 		

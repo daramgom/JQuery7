@@ -74,9 +74,6 @@
 		});
 		
 		
-		
-		
-		
 	});// jquery 끝
 </script>
 </head>

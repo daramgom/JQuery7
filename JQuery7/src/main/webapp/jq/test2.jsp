@@ -13,13 +13,13 @@
 	$(document).ready(function(){
 		// alert("test2.jsp");
 		
-		// h2태그의 글자색 변경
+		// ** h2태그의 글자색 변경 **
 		// var data = $('h2'); // h2태그
 		// alert(data);
 		// console.log(data);
 		// $('h2').css('color','blue');
 		
-		// 선택자 : 전체, 태그선택자, id선택자, class선택자
+		// ** 선택자 : 전체, 태그선택자, id선택자, class선택자 **
 		$("*").css('color','red'); // jquery에서 "",'' 같음
 		$("h4").css('color','orange');
 		$("h3").css('color','green'); // 태그명
@@ -32,7 +32,7 @@
 		// 비밀번호 blue
 		$(".pw").css('color','blue');
 		
-		// 속성 탐색 선택자
+		// ** 속성 탐색 선택자 **
 		$("input[type=text]").css('color','magenta');
 		// $("input[type=password]").css('color','cyan');
 		$("input[type^=p]").css('color','cyan'); // 시작값

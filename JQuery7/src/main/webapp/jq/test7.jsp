@@ -113,7 +113,7 @@ $(function(){
 				var gender = $(this).find("gender").text();
 				var tel = $(this).find("tel").text();
 				// alert(name);
-				$('body').append("<hr> 이름 : "+name+" / 성별 : "+gender+" / 나이 : "+tel);
+				$('body').append("<hr> 이름 : "+name+" / 성별 : "+gender+" / 전화번호 : "+tel);
 			});
 		}
 	});
@@ -147,12 +147,12 @@ $(function(){
 // 					<a href="link"> ${title} </a>
 // 				`;
 				
-				
 				$('#news').append(tag+"<hr>");
 			});
 		}
 	});
 	// $('#news').append("<a href='"+link+"'>"+title+"</a><hr>"); --> 출력시점시 불러오는 순서에 따라서 데이터가 존재하지 않음
+	
 	
 });// jquery 끝
 

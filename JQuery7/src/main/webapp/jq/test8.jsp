@@ -106,7 +106,7 @@
 				$(data).each(function(idx,value){
 					// console.log(value);
 					$("#resultDiv").append(idx+" / "+value.name+" , "+value.age+" , "+value.gender+"<hr>");
-					$('#resultTable').append("<tr><td>"+value.name+"</td><td>"+value.age+"</td><td>"+value.gender+"</td></tr>")
+					$('#resultTable').append("<tr><td>"+value.name+"</td><td>"+value.age+"</td><td>"+value.gender+"</td></tr>");
 				});
 			}
 		});
@@ -117,14 +117,16 @@
 			url:"list.jsp",
 			success : function(data){
 				// alert(data);
+				// console.log(data);
 				// $('body').append(data);
+				
 				// #dbMember 테이블에 요소 추가
-				$(data).each(function(idx,value){
-					$('#dbMember').append("<tr><td>"+value.id+"</td><td>"+value.pw+"</td><td>"+value.email+"</td></tr>")
-				})
+				$(data).each(function(key,value){
+					$('#dbMember').append("<tr><td>"+value.id+"</td><td>"+value.pw+"</td><td>"+value.email+"</td></tr>");
+				});
 			}
 			
-		})
+		});
 		
 		
 	});// jquery 끝

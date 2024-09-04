@@ -47,10 +47,11 @@
 		// ...
 		
 		memberList.add(dto);
+		// json 데이터 타입을 출력
+		// 스크립틀릿 밖에 주석 넣지 말기
 	}
 	%>
 	<%=memberList %>
-	
 	
 	
 	
